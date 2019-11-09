@@ -306,27 +306,162 @@ $("body").keydown(function() {
 		var tecla = window.event.keyCode;
 
 		if (tecla == 116) {
-			confirm("Si recarga la página perderá todos los datos ingresados.", function(result) {
-				if (result) {
-					location.reload();
-				} else {
-					event.keyCode = 0;
-					event.returnValue = false;
-				}
-			});
+			if (confirm("Si recarga la página perderá todos los datos ingresados.")) {
+				location.reload();
+			} else {
+				event.keyCode = 0;
+				event.returnValue = false;
+			}
 		}
 	}
 });
 
 /* ----- Generar archivo PDF ----- */
 $("#btnGenerarPDF").click(function() {
-	genPDF();
+	const pdf = new jsPDF({
+		unit: 'cm',
+		format: 'letter'
+	});
+	
+	let img = getBase64Image(document.getElementById("logo"));
+	pdf.addImage(img, 'PNG', 1.27, 1.27, 2.7, 2.6);
+
+	//Añadiendo fecha
+	pdf.setFont('helvetica', 'normal');
+	pdf.setFontSize(10);
+	pdf.setTextColor('#404040');
+	pdf.text(alignRight(pdf, "Ecatepec de Morelos, México a " + date)-1.27, 2.62, 'Ecatepec de Morelos, México a ' + date);
+
+	//Añadiendo título
+	pdf.setFont('helvetica', 'normal');
+	pdf.setFontSize(15);
+	pdf.setTextColor('#000000');
+	pdf.text(alignCenter(pdf, 'Cotización'), 3.87, 'Cotización');
+
+	//Añadiendo subtítulo
+	pdf.setFont('helvetica', 'normal');
+	pdf.setFontSize(13);
+	pdf.setTextColor('#542700');
+	pdf.text(alignCenter(pdf, cliente_empresa), 4.92, cliente_empresa);
+
+	//Añadiendo entrada
+	pdf.setFont('helvetica', 'bold');
+	pdf.setFontSize(12);
+	pdf.setTextColor('#000000');
+	pdf.text(1.27, 7.06, 'ATENCIÓN ' + cliente_name + ',');
+
+	pdf.setFont('helvetica', 'light');
+	pdf.setFontSize(12);
+	pdf.setTextColor('#3B3838');
+	pdf.text(1.27, 7.9, '            Por medio de la presente me permito mandarle un cordial saludo y a la vez poner a su consideración la');
+	pdf.text(1.27, 8.55, 'siguiente propuesta de cotización:');
+
+	//Añadiendo la tabla generada
+	let columns = ["CANTIDAD", "CONCEPTO", "PRECIO UNITARIO", "IMPORTE"];
+	let data = [];
+
+	for (let i = 0; i < productos.length; i++) {
+		data.push(productos[i]);
+	}
+
+	pdf.autoTable(columns, data, {
+		startY: 9.2,
+		styles: { 
+			font: 'helvetica',
+			fontStyle: 'bold',	
+			fillColor: [255, 255, 255],
+			halign: 'center',
+    		valign: 'middle',
+    		fontSize: 12,
+			lineColor: [255, 134, 0],
+			lineWidth: 0.01,
+			cellPadding: 0.17
+		},
+		headStyles: {
+			fillColor: [255, 134, 0],
+			textColor: [255, 255, 255]
+		},
+		columnStyles: {
+			0: {cellWidth: 3},
+			1: {cellWidth: 9.7},
+			2: {cellWidth: 3},
+			3: {cellWidth: 3}
+		},
+		alternateRowStyles: {
+			fillColor: [255, 227, 148],
+			textColor: [59, 56, 56]
+		},
+		footStyles: {
+			fillColor: [255, 255, 255],
+			textColor: [59, 56, 56]
+		},
+		foot: [
+			[
+				{ content: "", colSpan: 2, rowSpan: 3 },
+				{ content: "Subtotal", styles: { halign: "right" } },
+				{ content: "$" + subtotal(), styles: { halign: "left" } }
+			],
+			[
+				{ content: "I.V.A 16%", styles: { halign: "right" } },
+				{ content: "$" + iva(), styles: { halign: "left" } }
+			],
+			[
+				{ content: "TOTAL", styles: { halign: "right" } },
+				{ content: "$" + totalAPagar(), styles: { halign: "left" } }
+			]
+		]
+	});
+
+	//Añadiendo acotaciones de la cotización
+	pdf.setFont('helvetica', 'bold');
+	pdf.setFontSize(12);
+	pdf.setTextColor('#814200');
+	pdf.text("ACOTACIONES", 1.27, pdf.autoTable.previous.finalY + 1);
+
+	pdf.setFont('helvetica', 'normal');
+	pdf.setFontSize(12);
+	pdf.setTextColor('#2b2b2b');
+	pdf.text("VIGENCIA DE LA COTIZACION: Treinta (30) días habiles.", 1.7, pdf.autoTable.previous.finalY + 1.7);
+
+	pdf.setFont('helvetica', 'bold');
+	pdf.setFontSize(12);
+	pdf.setTextColor('#2b2b2b');
+	pdf.text("-- Para todo tipo de trabajo solicitamos el 50% de anticipo. --", 1.7, pdf.autoTable.previous.finalY + 2.3);
+
+	//Añadiendo despedida
+	pdf.setFont('helvetica', 'normal');
+	pdf.setFontSize(12);
+	pdf.setTextColor('#2b2b2b');
+	pdf.text("Agradeciendo de antemano su atención, quedo a sus órdenes para cualquier duda o comentario.", 1.27, pdf.autoTable.previous.finalY + 3);
+	pdf.text("Atentamente", alignCenter(pdf, "Atentamente"), pdf.autoTable.previous.finalY + 4.5);
+	pdf.text("Alejandra Lascari Mora", alignCenter(pdf, "Alejandra Lascari Mora"), pdf.autoTable.previous.finalY + 5.1);
+	pdf.text("Calle: Gustavo Baz Mz. 54 Lt.25 Col. Villas de Guadalupe Xalostoc Ecatepec de Morelos, Cp. 55339", alignCenter(pdf, "Calle: Gustavo Baz Mz. 54 Lt.25 Col. Villas de Guadalupe Xalostoc Ecatepec de Morelos, Cp. 55339"), pdf.autoTable.previous.finalY + 6.5);
+
+	//Añadiendo firma electrónica
+	let img1 = getBase64Image(document.getElementById("firma"));
+	pdf.addImage(img1, 'PNG', (pdf.internal.pageSize.width - 13.94), pdf.autoTable.previous.finalY + 7.5, 12.67, 3.5);
+
+	pdf.save('Test.pdf');
 });
 
-function genPDF() {
-	var doc = new jsPDF();
-	doc.text(20, 20, 'Test message!!!');
-	doc.addPage();
-	doc.text(20, 20, 'Test message 2!!!');
-	doc.save('Test.pdf');
+function alignCenter(pdf, text) {
+	let textWidth = pdf.getStringUnitWidth(text) * pdf.internal.getFontSize() / pdf.internal.scaleFactor;
+	let positionX = (pdf.internal.pageSize.width - textWidth) / 2;
+	return positionX;
+}
+
+function alignRight(pdf, text) {
+	let textWidth = pdf.getStringUnitWidth(text) * pdf.internal.getFontSize() / pdf.internal.scaleFactor;
+	let positionX = (pdf.internal.pageSize.width - textWidth);
+	return positionX;
+}
+
+function getBase64Image(img) {
+	let canvas = document.createElement("canvas");
+	canvas.width = img.width;
+	canvas.height = img.height;
+	let ctx = canvas.getContext("2d");
+	ctx.drawImage(img, 0, 0);
+	let dataURL = canvas.toDataURL();
+	return dataURL;
 }

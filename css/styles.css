@@ -312,3 +312,7 @@ main article section div.container_final img {
     margin-bottom: 40px;
     box-shadow: 1px 1px 5px #e6e6e6;
 }
+
+#logo, #firma {
+    display: none;
+}
