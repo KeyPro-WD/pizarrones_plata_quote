@@ -29,6 +29,7 @@ $("#btnCancel").click(function() {
 
 $("#btnAdd").click(function() {
 	addProduct();
+	$("#result").html("");
 });
 
 $(document).on("click", "#btnEliminar", function() {
@@ -323,7 +324,7 @@ $("#btnGenerarPDF").click(function() {
 		format: 'letter'
 	});
 	
-	let img = getBase64Image(document.getElementById("logo"));
+	let img = get64(document.getElementById("logo"));
 	pdf.addImage(img, 'PNG', 1.27, 1.27, 2.7, 2.6);
 
 	//Añadiendo fecha
@@ -438,10 +439,17 @@ $("#btnGenerarPDF").click(function() {
 	pdf.text("Calle: Gustavo Baz Mz. 54 Lt.25 Col. Villas de Guadalupe Xalostoc Ecatepec de Morelos, Cp. 55339", alignCenter(pdf, "Calle: Gustavo Baz Mz. 54 Lt.25 Col. Villas de Guadalupe Xalostoc Ecatepec de Morelos, Cp. 55339"), pdf.autoTable.previous.finalY + 6.5);
 
 	//Añadiendo firma electrónica
-	let img1 = getBase64Image(document.getElementById("firma"));
+	let img1 = get64(document.getElementById("firma"));
 	pdf.addImage(img1, 'PNG', (pdf.internal.pageSize.width - 13.94), pdf.autoTable.previous.finalY + 7.5, 12.67, 3.5);
 
-	pdf.save('Test.pdf');
+	let f = new Date();
+	let fecha = f.getDate() + "" + (f.getMonth() + 1) + "" + f.getFullYear();
+
+	if (cliente_empresa != "" && cliente_empresa != null) {
+		pdf.save('Cotización_' + cliente_empresa + "_" + fecha + '.pdf');
+	} else {
+		pdf.save('Cotización_' + fecha + '.pdf');
+	}
 });
 
 function alignCenter(pdf, text) {
@@ -456,7 +464,7 @@ function alignRight(pdf, text) {
 	return positionX;
 }
 
-function getBase64Image(img) {
+function get64(img) {
 	let canvas = document.createElement("canvas");
 	canvas.width = img.width;
 	canvas.height = img.height;

@@ -1,0 +1,415 @@
+ID,PRODUCTO,DESCRIPCIÓN,PRECIO UNITARIO
+1,Pizarron Blanco,de 30x40 cm,119.00
+2,Pizarron Blanco,de 30x60 cm,156.00
+3,Pizarron Blanco,de 40x60 cm,181.00
+4,Pizarron Blanco,de 50x70 cm,213.00
+5,Pizarron Blanco,de 60x80 cm,289.00
+6,Pizarron Blanco,de 60x90 cm,317.00
+7,Pizarron Blanco,de 60x120 cm,505.00
+8,Pizarron Blanco,de 80x120 cm,607.00
+9,Pizarron Blanco,de 90x120 cm,668.00
+10,Pizarron Blanco,de 90x150 cm,800.00
+11,Pizarron Blanco,de 90x180 cm,933.00
+12,Pizarron Blanco,de 90x240 cm,1198.00
+13,Pizarron Blanco,de 90x300 cm,1700.00
+14,Pizarron Blanco,de 120x150 cm,983.00
+15,Pizarron Blanco,de 120x180 cm,1156.00
+16,Pizarron Blanco,de 120x240 cm,1481.00
+17,Pizarron Blanco,de 120x300 cm,2079.00
+18,Pizarron Magnético,de 30x40 cm,199.00
+19,Pizarron Magnético,de 30x60 cm,281.00
+20,Pizarron Magnético,de 40x60 cm,351.00
+21,Pizarron Magnético,de 50x70 cm,484.00
+22,Pizarron Magnético,de 60x80 cm,638.00
+23,Pizarron Magnético,de 60x90 cm,651.00
+24,Pizarron Magnético,de 60x120 cm,1034.00
+25,Pizarron Magnético,de 80x120 cm,1168.00
+26,Pizarron Magnético,de 90x120 cm,1345.00
+27,Pizarron Magnético,de 90x150 cm,1650.00
+28,Pizarron Magnético,de 90x180 cm,1954.00
+29,Pizarron Magnético,de 90x240 cm,2563.00
+30,Pizarron Magnético,de 90x300 cm,3695.00
+31,Pizarron Magnético,de 120x150 cm,2333.00
+32,Pizarron Magnético,de 120x180 cm,2765.00
+33,Pizarron Magnético,de 120x240 cm,3630.00
+34,Pizarron Magnético,de 120x300 cm,4690.00
+35,Pizarron de Corcho,de 30x40 cm,103.00
+36,Pizarron de Corcho,de 30x60 cm,137.00
+37,Pizarron de Corcho,de 40x60 cm,166.00
+38,Pizarron de Corcho,de 50x70 cm,220.00
+39,Pizarron de Corcho,de 60x80 cm,282.00
+40,Pizarron de Corcho,de 60x90 cm,311.00
+41,Pizarron de Corcho,de 60x120 cm,500.00
+42,Pizarron de Corcho,de 80x120 cm,616.00
+43,Pizarron de Corcho,de 90x120 cm,675.00
+44,Pizarron de Corcho,de 90x150 cm,733.00
+45,Pizarron de Corcho,de 90x180 cm,953.00
+46,Pizarron de Corcho,de 90x240 cm,1230.00
+47,Pizarron de Corcho,de 90x300 cm,1450.00
+48,Pizarron de Corcho,de 120x150 cm,1025.00
+49,Pizarron de Corcho,de 120x180 cm,1200.00
+50,Pizarron de Corcho,de 120x240 cm,1550.00
+51,Pizarron de Corcho,de 120x300 cm,1899.00
+52,Pizarron de Gis,de 30x40 cm,119.00
+53,Pizarron de Gis,de 30x60 cm,139.86
+54,Pizarron de Gis,de 40x60 cm,162.87
+55,Pizarron de Gis,de 50x70 cm,210.42
+56,Pizarron de Gis,de 60x80 cm,241.34
+57,Pizarron de Gis,de 60x90 cm,267.92
+58,Pizarron de Gis,de 60x120 cm,433.46
+59,Pizarron de Gis,de 80x120 cm,533.31
+60,Pizarron de Gis,de 90x120 cm,586.79
+61,Pizarron de Gis,de 90x150 cm,704.83
+62,Pizarron de Gis,de 90x180 cm,822.87
+63,Pizarron de Gis,de 90x240 cm,1073.00
+64,Pizarron de Gis,de 120x150 cm,878.88
+65,Pizarron de Gis,de 120x180 cm,1025.04
+66,Pizarron de Gis,de 120x240 cm,1331.54
+67,Pizarron de Gis,de 120x300 cm,1927.80
+68,Pizarron Personalizado,,000.00
+69,Pizarron Ranurado,de 30x60 cm,303.00
+70,Pizarron Ranurado,de 40x60 cm,329.00
+71,Pizarron Ranurado,de 50x70 cm,377.00
+72,Pizarron Ranurado,de 60x80 cm,433.00
+73,Pizarron Ranurado,de 60x90 cm,459.00
+74,Pizarron Ranurado,de 60x120 cm,537.00
+75,Pizarron Ranurado,de 80x120 cm,866.00
+76,Pizarron Ranurado,de 90x120 cm,919.00
+77,Pizarron Ranurado,de 90x150 cm,1036.00
+78,Pizarron Ranurado,de 90x180 cm,1153.00
+79,Pizarron Ranurado,de 90x240 cm,1388.00
+80,Pizarron Ranurado,de 120x150 cm,1231.00
+81,Pizarron Ranurado,de 120x180 cm,1388.00
+82,Pizarron Ranurado,de 120x240 cm,1925.00
+83,Atril con Ruedas,Pizarron blanco de 90x150x200 cm,2025.00
+84,Atril con Ruedas,Pizarron blanco de 90x180x200 cm,2230.00
+85,Atril con Ruedas,Pizarron blanco de 120x150x200 cm,2226.00
+86,Atril con Ruedas,Pizarron blanco de 120x180x200 cm,2470.00
+87,Atril con Ruedas,Pizarron blanco de 120x240x200 cm,2945.00
+88,Pizarron con Tripie,reforzado con tubo de 1 1/2 por 3/4 y 1.5 m,550.00
+89,Pizarron con Tripie,estándar con tubo cuadrado de 1" y 1.3 m,450.00
+90,Pizarron con Tripie,económico con tubo cuadrado de 3/4 y 1.2 m,350.00
+91,Rotafolio ejecutivo,de 70x90x180 cm,1969.00
+92,Rotafolio portátil,de 70x90x180 cm,2165.00
+93,Rotafolio económico,de 70x90x180 cm,1440.00
+94,Directorio,Pizarron blanco de 120x150 cm,2650.00
+95,Directorio,Pizarron blanco de 120x180 cm,2979.00
+96,Directorio,Pizarron blanco de 120x240 cm,3770.00
+97,Directorio,Pizarron ranurado de 120x240 cm,4200.00
+98,Pupitre Poly 7/8,Paleta de MDF MEDIANA,395.00
+99,Pupitre Poly 7/8,Paleta de MDF ADULTO,417.00
+100,Pupitre Poly 7/8,Paleta de polipropileno negra MEDIANA,426.00
+101,Pupitre Poly 7/8,Paleta de polipropileno negra ADULTO,448.00
+102,Pupitre Poly Jumbo 7/8,Paleta de MDF ADULTO,481.00
+103,Pupitre Poly Jumbo 7/8,Paleta de polipropileno negra ADULTO,497.00
+104,Pupitre Poly 1",Paleta de MDF MEDIANA,408.00
+105,Pupitre Poly 1",Paleta de MDF ADULTO,432.00
+106,Pupitre Poly 1",Paleta de polipropileno negra MEDIANA,440.00
+107,Pupitre Poly 1",Paleta de polipropileno negra ADULTO,465.00
+108,Pupitre Poly Jumbo 1",Paleta de MDF ADULTO,510.00
+109,Pupitre Poly Jumbo 1",Paleta de polipropileno negra ADULTO,517.00
+110,Pupitre SEP 7/8,Paleta de MDF MEDIANA,421.00
+111,Pupitre SEP 7/8,Paleta de MDF ADULTO,454.00
+112,Pupitre SEP 7/8,Paleta de polipropileno MEDIANA,453.00
+113,Pupitre SEP 7/8,Paleta de polipropileno ADULTO,475.00
+114,Pupitre SEP 1",Paleta de MDF MEDIANA,441.00
+115,Pupitre SEP 1",Paleta de MDF ADULTO,466.00
+116,Pupitre SEP 1",Paleta de polipropileno MEDIANA,473.00
+117,Pupitre SEP 1",Paleta de polipropileno ADULTO,498.00
+118,Pupitre con cubierta 7/8,de 40x80 cm de MDF MEDIANA,388.00
+119,Pupitre con cubierta 7/8,de 40x80 cm de MDF ADULTO,457.00
+120,Pupitre con cubierta 7/8,de 40x80 cm de polipropileno MEDIANA,551.00
+121,Pupitre con cubierta 7/8,de 40x80 cm de polipropileno ADULTO,572.00
+122,Pupitre con cubierta 1",de 40x48 cm de MDF MEDIANA,471.00
+123,Pupitre con cubierta de 1",de 40x48 cm de MDF ADULTO,494.00
+124,Pupitre con cubierta de 1",de 40x48 cm de polipropileno MEDIANA,566.00
+125,Pupitre con cubierta de 1",de 40x48 cm de polipropileno ADULTO,589.00
+126,Pupitre Mesabanco,con cubierta de triplay con formaica MEDIANA,557.00
+127,Pupitre Mesabanco,con cubierta de triplay con formaica ADULTO,583.00
+128,Pupitre Mesabanco,con cubierta de polipropileno MEDIANA,531.00
+129,Pupitre Mesabanco,con cubierta de polipropileno ADULTO,556.00
+130,Pupitre de triplay 7/8,de triplay barnizado MEDIANA,421.00
+131,Pupitre de triplay 7/8,de triplay barnizado ADULTO,460.00
+132,Pupitre de triplay 7/8,de triplay con formaica MEDIANA,408.00
+133,Pupitre de triplay 7/8,de triplay con formaica ADULTO,438.00
+134,Pupitre de triplay 7/8,- ranura para lápiz,10.00
+135,Pupitre de triplay 1",de triplay barnizado MEDIANA,441.00
+136,Pupitre de triplay 1",de triplay barnizado ADULTO,465.00
+137,Pupitre de triplay 1",de triplay con formaica MEDIANA,428.00
+138,Pupitre de triplay 1",de triplay con formaica ADULTO,452.00
+139,Pupitre de lámina Steel,de lámina ADULTO,610.00
+140,Pupitre Nova,Paleta de MDF ADULTO,445.00
+141,Pupitre Nova,de polipropileno color negro ADULTO,489.00
+142,Pupitre ISO,Paleta de MDF ADULTO,589.00
+143,Pupitre ISO,de polipropileno color negro,595.00
+144,Pupitre ISO Convenciones,Paleta de MDF ADULTO,618.00
+145,Pupitre ISO Convenciones,Paleta de polipropileno color negro,683.00
+146,Pupitre Nova Convenciones,Paleta de MDF ADULTO,525.00
+147,Pupitre Nova Convenciones,Paleta de polipropileno color negro ADULTO,580.00
+148,Pupitre binario de polipropileno,Paleta de polipropileno MEDIANA,1027.00
+149,Pupitre binario de polipropileno,Paleta de polipropileno ADULTO,1160.00
+150,Pupitre binario de polipropileno,Paleta de triplay con formaica MEDIANA,1070.00
+151,Pupitre binario de polipropileno,Paleta de triplay con formaica ADULTO,1107.00
+152,Pupitre binario de triplay,Paleta de triplay barnizado MEDIANA,1033.00
+153,Pupitre binario de triplay,Paleta de triplay barnizado ADULTO,1066.00
+154,Pupitre binario de triplay,Paleta de triplay con formaica MEDIANA,1009.00
+155,Pupitre binario de triplay,Paleta de triplay con formaica ADULTO,982.00
+156,Silla Poly,Estructura en 7/8" sin parrilla MEDIANA,285.00
+157,Silla Poly,Estructura en 7/8" sin parrilla ADULTO,293.00
+158,Silla Poly,Estructura en 7/8" con parrilla MEDIANA,304.00
+159,Silla Poly,Estructura en 7/8" con parrilla ADULTO,307.00
+160,Silla Poly,Estructura en 1" sin parrilla MEDIANA,299.00
+161,Silla Poly,Estructura en 1" sin parrilla ADULTO,303.00
+162,Silla Poly,Estructura en 1" con parrilla MEDIANA,314.00
+163,Silla Poly,Estructura en 1" con parrilla ADULTO,317.00
+164,Silla infantil Poly,Estructura en 7/8" sin parrilla,268.00
+165,Silla infantil Poly,Estructura en 7/8" con parrilla,282.00
+166,Silla infantil Poly,Estructura en 3/4" sin parrilla,259.00
+167,Silla infantil Poly,Estructura en 3/4" con parrilla,273.00
+168,Silla infantil Poly,Estructura en 1" sin parrilla,286.00
+169,Silla infantil Poly,Estructura en 1" con parrilla,300.00
+170,Silla SEP,7/8 sin parrilla INFANTIL,276.00
+171,Silla SEP,7/8 sin parrilla MEDIANA,322.00
+172,Silla SEP,7/8 sin parrilla ADULTO,343.00
+173,Silla SEP,7/8 con parrilla INFANTIL,279.00
+174,Silla SEP,7/8 con parrilla MEDIANA,342.00
+175,Silla SEP,7/8 con parrilla ADULTO,357.00
+176,Silla SEP,1" sin parrilla INFANTIL,284.00
+177,Silla SEP,1" sin parrilla MEDIANA,337.00
+178,Silla SEP,1" sin parrilla ADULTO,304.00
+179,Silla SEP,1" con parrilla INFANTIL,291.00
+180,Silla SEP,1" con parrilla MEDIANA,352.00
+181,Silla SEP,1" con parrilla ADULTO,374.00
+182,Silla de lámina Steel,sin parrilla ADULTO,370.00
+183,Silla de lámina Steel,con parrilla de varilla ADULTO,385.00
+184,Silla de triplay,en 7/8" barnizado sin parrilla MEDIANA,309.00
+185,Silla de triplay,en 7/8" barnizado sin parrilla ADULTO,330.00
+186,Silla de triplay,en 7/8" barnizado con parrilla MEDIANA,320.00
+187,Silla de triplay,en 7/8" barnizado con parrilla ADULTO,344.00
+188,Silla de triplay,en 7/8" con formaica sin parrilla MEDIANA,301.00
+189,Silla de triplay,en 7/8" con formaica sin parrilla ADULTO,322.00
+190,Silla de triplay,en 7/8" con formaica con parrilla MEDIANA,313.00
+191,Silla de triplay,en 7/8" con formaica con parrilla ADULTO,336.00
+192,Silla de triplay,en 1" barnizada sin parrilla MEDIANA,323.00
+193,Silla de triplay,en 1" barnizada sin parrilla ADULTO,347.00
+194,Silla de triplay,en 1" barnizada con parrilla MEDIANA,335.00
+195,Silla de triplay,en 1" barnizada con parrilla ADULTO,360.00
+196,Silla de triplay,en 1" con formaica con parrilla MEDIANA,327.00
+197,Silla de triplay,en 1" con formaica con parrilla ADULTO,353.00
+198,Silla de triplay,en 1" con formaica sin parrilla MEDIANA,301.00
+199,Silla de triplay,en 1" con formaica sin parrilla ADULTO,339.00
+200,Silla de triplay infantil,en 7/8" con formaica sin parrilla,290.00
+201,Silla de triplay infantil,en 7/8" con formaica con parrilla,306.00
+202,Silla de triplay infantil,en 7/8" con barnizado sin parrilla,286.00
+203,Silla de triplay infantil,en 7/8" con barnizado con parrilla,302.00
+204,Silla de triplay infantil,en 3/4" con barnizado sin parrilla,275.00
+205,Silla de triplay infantil,en 3/4" con barnizado con parrilla,290.00
+206,Silla de triplay infantil,en 3/4" con formaica sin parrilla,379.00
+207,Silla de Visita Nova,sin parrilla,332.00
+208,Silla de Visita Nova,con parrilla,361.00
+209,Silla de Visita Nova,con brazos,351.00
+210,Silla de Visita ISO,sin parrilla,481.00
+211,Silla de Visita ISO,con parrilla,501.00
+212,Silla de Visita ISO,con brazos,513.00
+213,Mesa trapezoidal 120x60 cm,en MDF 50 cm INFANTIL,613.00
+214,Mesa trapezoidal 120x60 cm,en MDF 65 cm MEDIANA,643.00
+215,Mesa trapezoidal 120x60 cm,en MDF 75 cm ADULTO,667.00
+216,Mesa trapezoidal 120x60 cm,en polipropileno 50 cm INFANTIL,575.00
+217,Mesa trapezoidal 120x60 cm,en polipropileno 65 cm MEDIANA,604.00
+218,Mesa trapezoidal 120x60 cm,en polipropileno 75 cm ADULTO,629.00
+219,Mesa trapezoidal 120x60 cm,con triplay barnizado 50 cm INFANTIL,677.00
+220,Mesa trapezoidal 120x60 cm,con triplay barnizado 65 cm MEDIANA,706.00
+221,Mesa trapezoidal 120x60 cm,con triplay barnizado 75 cm ADULTO,731.00
+222,Mesa trapezoidal 120x60 cm,con triplay con formaica 50 cm INFANTIL,643.00
+223,Mesa trapezoidal 120x60 cm,con triplay con formaica 65 cm MEDIANA,673.00
+224,Mesa trapezoidal 120x60 cm,con triplay con formaica 75 cm ADULTO,702.00
+225,Mesa trapezoidal 90x40 cm,en MDF 50 cm INFANTIL,474.00
+226,Mesa trapezoidal 90x40 cm,en MDF 65 cm MEDIANA,505.00
+227,Mesa trapezoidal 90x40 cm,en MDF 75 cm ADULTO,526.00
+228,Mesa trapezoidal 90x40 cm,en polipropileno 50 cm INFANTIL,493.00
+229,Mesa trapezoidal 90x40 cm,en polipropileno 65 cm MEDIANA,524.00
+230,Mesa trapezoidal 90x40 cm,en polipropileno 75 cm ADULTO,544.00
+231,Mesa trapezoidal 90x40 cm,con triplay barnizado 50 cm INFANTIL,519.00
+232,Mesa trapezoidal 90x40 cm,con triplay barnizado 65 cm MEDIANA,550.00
+233,Mesa trapezoidal 90x40 cm,con triplay barnizado 75 cm ADULTO,570.00
+234,Mesa trapezoidal 90x40 cm,con triplay con formaica 50 cm INFANTIL,494.00
+235,Mesa trapezoidal 90x40 cm,con triplay con formaica 65 cm MEDIANA,525.00
+236,Mesa trapezoidal 90x40 cm,con triplay con formaica 75 cm ADULTO,546.00
+237,Mesa para maestro 120x60 cm,en MDF 50 cm INFANTIL,602.00
+238,Mesa para maestro 120x60 cm,en MDF 65 cm MEDIANA,631.00
+239,Mesa para maestro 120x60 cm,en MDF 75 cm ADULTO,656.00
+240,Mesa para maestro 120x60 cm,en polipropileno 50 cm INFANTIL,638.00
+241,Mesa para maestro 120x60 cm,en polipropileno 65 cm MEDIANA,697.00
+242,Mesa para maestro 120x60 cm,en polipropileno 75 cm ADULTO,692.00
+243,Mesa para maestro 120x60 cm,con triplay barnizado 50 cm INFANTIL,661.00
+244,Mesa para maestro 120x60 cm,con triplay barnizado 65 cm MEDIANA,691.00
+245,Mesa para maestro 120x60 cm,con triplay barnizado 75 cm ADULTO,715.00
+246,Mesa para maestro 120x60 cm,con triplay con formaica 50 cm INFANTIL,632.00
+247,Mesa para maestro 120x60 cm,con triplay con formaica 65 cm MEDIANA,661.00
+248,Mesa para maestro 120x60 cm,con triplay con formaica 75 cm ADULTO,686.00
+249,Mesa escolar 110x50 cm,en MDF 50 cm INFANTIL,562.00
+250,Mesa escolar 110x50 cm,en MDF 65 cm MEDIANA,590.00
+251,Mesa escolar 110x50 cm,en MDF 75 cm ADULTO,610.00
+252,Mesa escolar 110x50 cm,en polipropileno 50 cm INFANTIL,614.00
+253,Mesa escolar 110x50 cm,en polipropileno 65 cm MEDIANA,641.00
+254,Mesa escolar 110x50 cm,en polipropileno 75 cm ADULTO,662.00
+255,Mesa escolar 110x50 cm,con triplay barnizado 50 cm INFANTIL,611.00
+256,Mesa escolar 110x50 cm,con triplay barnizado 65 cm MEDIANA,638.00
+257,Mesa escolar 110x50 cm,con triplay barnizado 75 cm ADULTO,658.00
+258,Mesa escolar 110x50 cm,con triplay con formaica 50 cm INFANTIL,585.00
+259,Mesa escolar 110x50 cm,con triplay con formaica 65 cm MEDIANA,613.00
+260,Mesa escolar 110x50 cm,con triplay con formaica 75 cm ADULTO,633.00
+261,Mesa binaria 120x40 cm,en MDF 50 cm INFANTIL,521.00
+262,Mesa binaria 120x40 cm,en MDF 65 cm MEDIANA,563.00
+263,Mesa binaria 120x40 cm,en MDF 75 cm ADULTO,584.00
+264,Mesa binaria 120x40 cm,en polipropileno 50 cm INFANTIL,603.00
+265,Mesa binaria 120x40 cm,en polipropileno 65 cm MEDIANA,634.00
+266,Mesa binaria 120x40 cm,en polipropileno 75 cm ADULTO,655.00
+267,Mesa binaria 120x40 cm,con triplay barnizado 50 cm INFANTIL,587.00
+268,Mesa binaria 120x40 cm,con triplay barnizado 65 cm MEDIANA,617.00
+269,Mesa binaria 120x40 cm,con triplay barnizado 75 cm ADULTO,638.00
+270,Mesa binaria 120x40 cm,con triplay con formaica 50 cm INFANTIL,553.00
+271,Mesa binaria 120x40 cm,con triplay con formaica 65 cm MEDIANA,583.00
+272,Mesa binaria 120x40 cm,con triplay con formaica 75 cm ADULTO,604.00
+273,Mesa infantil R. 80x60 cm,en MDF 50 cm INFANTIL,517.00
+274,Mesa infantil R. 80x60 cm,en MDF 65 cm MEDIANA,543.00
+275,Mesa infantil R. 80x60 cm,en MDF 75 cm ADULTO,543.00
+276,Mesa infantil R. 80x60 cm,en polipropileno 50 cm INFANTIL,547.00
+277,Mesa infantil R. 80x60 cm,en polipropileno 65 cm MEDIANA,587.00
+278,Mesa infantil R. 80x60 cm,en polipropileno 75 cm ADULTO,608.00
+279,Mesa infantil R. 80x60 cm,con triplay barnizado 50 cm INFANTIL,545.00
+280,Mesa infantil R. 80x60 cm,con triplay barnizado 65 cm MEDIANA,585.00
+281,Mesa infantil R. 80x60 cm,con triplay barnizado 75 cm ADULTO,606.00
+282,Mesa infantil R. 80x60 cm,con triplay con formaica 50 cm INFANTIL,523.00
+283,Mesa infantil R. 80x60 cm,con triplay con formaica 65 cm MEDIANA,563.00
+284,Mesa infantil R. 80x60 cm,con triplay con formaica 75 cm ADULTO,583.00
+285,Mesa de pedestal,en MDF,585.00
+286,Mesa de pedestal,con triplay barnizado,650.00
+287,Mesa de pedestal,con laminado plástico,860.00
+288,Silla de Visita Boom,sin brazos,650.00
+289,Silla de Visita Boom,con brazos,680.00
+290,Silla de Visita Mesh,,670.00
+291,Silla de Visita Rusia,,431.00
+292,Silla de Visita Convenciones,Pintada,468.00
+293,Silla de Visita Convenciones,Cromada,581.00
+294,Silla de Visita Nova Convenciones,,392.00
+295,Silla de Visita ISO Convenciones,,540.00
+296,Silla secretarial Mesh,sin brazos,950.00
+297,Silla secretarial Mesh,con brazos,999.00
+298,Silla secretarial Topex,,918.00
+299,Silla secretarial ISO,tela pliana con brazos,842.00
+300,Silla secretarial ISO,tela pliana sin brazos,794.00
+301,Silla secretarial ISO,vinil con brazos,912.00
+302,Silla secretarial ISO,vinil sin brazos,864.00
+303,Silla secretarial Nova,con brazos,680.00
+304,Silla secretarial Nova,sin brazos,728.00
+305,Sillón operativo Rigel,con brazos,1245.00
+306,Sillón operativo Rigel,sin brazos,1055.00
+307,Sillón operativo Rigel con trineo,con brazos,1250.00
+308,Sillón operativo Rigel con trineo,sin brazos,1180.00
+309,Sillón operativo Mizar con trineo,con brazos,1165.00
+310,Sillón operativo Mizar con trineo,sin brazos,1030.00
+311,Sillón Mizar cajero,con brazos,1375.00
+312,Sillón Mizar cajero,sin brazos,1220.00
+313,Sillón operativo Mizar,sin reclinar con brazos,1155.00
+314,Sillón operativo Mizar,sin reclinar sin brazos,1000.00
+315,Sillón operativo Mizar,reclinable con brazos,1255.00
+316,Sillón operativo Mizar,reclinable sin brazos,1100.00
+317,Sillón operativo Alcor,sin reclinar con brazos,1555.00
+318,Sillón operativo Alcor,sin reclinar sin brazos,1000.00
+319,Sillón operativo Alcor,reclinable con brazos,1410.00
+320,Sillón operativo Alcor,reclinable sin brazos,1100.00
+321,Sillón ejecutivo Cetus,con brazos,1440.00
+322,Sillón ejecutivo Cetus,sin brazos,1240.00
+323,Sillón ejecutivo Atlas,cabecera con polipropileno,2400.00
+324,Sillón ejecutivo Atlas,cabecera sin polipropileno,2225.00
+325,Pablo alto,,1580.00
+326,Valentina alto,,1350.00
+327,Valentina bajo,,1280.00
+328,Banca tandem ISO Tapizada,dos plazas PINTADA,1074.00
+329,Banca tandem ISO Tapizada,dos plazas CROMADA,1044.00
+330,Banca tandem ISO Tapizada,tres plazas PINTADA,1452.00
+331,Banca tandem ISO Tapizada,tres plazas CROMADA,1628.00
+332,Banca tandem ISO Tapizada,cuatro plazas PINTADA,1923.00
+333,Banca tandem ISO Tapizada,cuatro plazas CROMADA,2047.00
+334,Banca tandem ISO Tapizada,cinco plazas PINTADA,2485.00
+335,Banca tandem ISO Tapizada,cinco plazas CROMADA,2500.00
+336,Banca tandem Nova,dos plazas PINTADA,795.00
+337,Banca tandem Nova,tres plazas PINTADA,1154.00
+338,Banca tandem Nova,cuatro plazas PINTADA,1609.00
+339,Banca tandem Nova,cinco plazas PINTADA,1968.00
+340,Banca tandem polipropileno,dos plazas PINTADA,809.00
+341,Banca tandem polipropileno,tres plazas PINTADA,1168.00
+342,Banca tandem polipropileno,cuatro plazas PINTADA,1623.00
+343,Banca tandem polipropileno,cinco plazas PINTADA,1981.00
+344,Banca Steel,dos plazas CROMADA,1950.00
+345,Banca Steel,tres plazas CROMADA,2850.00
+346,Banca Steel,cuatro plazas CROMADA,3500.00
+347,Banca Steel,cinco plazas CROMADA,4300.00
+348,Banco de laboratorio,asiento tapizado con pliana,310.00
+349,Banco de laboratorio,asiento de triplay barnizado,283.00
+350,Banco de laboratorio,asiento de triplay con formaica,278.00
+351,Banco de laboratorio,asiento de polipropileno,308.00
+352,Mueble multimedia,,935.00
+353,Mueble para PC,,835.00
+354,Mesa para computadora,860.00
+355,Escritorio ejecutivo,150x75x75 cm,4230.00
+356,Escritorio secretarial económico,120x75x75 cm,2720.00
+357,Escritorio ejecutivo,150x75x75 cm,3075.00
+358,Escritorio secretarial Akor,sin cajón,2920.00
+359,Escritorio secretarial Akor,con cajón,3800.00
+360,Escritorio ejecutivo Akor,sin cajón,3430.00
+361,Escritorio ejecutivo Akor,con cajón,4310.00
+362,Escritorio tipo CAPFCE,con cajón sin llave,1889.00
+363,Escritorio tipo CAPFCE,con cajón con llave,1929.00
+364,Pedestal Redondo,,2540.00
+365,Anaquel esqueleto,30x84x220 cm,1280.00
+366,Anaquel esqueleto,45x84x220 cm,1560.00
+367,Anaquel esqueleto,60x84x220 cm,1650.00
+368,Anaquel esqueleto,entrepaño adicional,175.00
+369,Anaquel esqueleto,40 tornillos adicionales,100.00
+370,Gabinete Metálico,3 entrepaños,3770.00
+371,Archivero vertical,2 gavetas de 47x69x70 cm,2140.00
+372,Archivero vertical,3 gavetas de 47x69x104 cm,2970.00
+373,Archivero vertical,4 gavetas de 47x69x132 cm,3780.00
+374,Archivero horizontal,2 gavetas de 90x48x70 cm,2250.00
+375,Archivero horizontal,3 gavetas de 90x48x103 cm,3170.00
+376,Archivero horizontal,4 gavetas de 90x48x132 cm,4010.00
+377,Locker metálico,de 2 puertas,1760.00
+378,Locker metálico,de 3 puertas,1916.00
+379,Locker metálico,de 4 puertas,2110.00
+380,Locker metálico,de 5 puertas,2295.00
+381,Librero con puertas de cristal,de 100x120 cm,3825.00
+382,Librero con puertas de cristal,de 100x150 cm,4310.00
+383,Tablón rectangular,de 75x180 cm PLASTICO,1035.00
+384,Tablón rectangular,de 75x180 cm FIBRA DE VIDRIO,995.00
+385,Tablón rectangular,de 75x180 cm FIBRACEL,720.00
+386,Tablón rectangular,de 75x150 cm FIBRA DE VIDRIO,815.00
+387,Tablón rectangular,de 75x150 cm FIBRACEL,665.00
+388,Tablón rectangular,de 75x120 cm PLASTICO,740.00
+389,Tablón rectangular,de 75x120 cm FIBRA DE VIDRIO,750.00
+390,Tablón rectangular,de 75x120 cm FIBRACEL,595.00
+391,Tablón rectangular,de 75x100 cm FIBRA DE VIDRIO,695.00
+392,Tablón rectangular,de 75x100 cm FIBRACEL,550.00
+393,Tablón rectangular,de 75x240 cm PLASTICO,1350.00
+394,Tablón rectangular,de 75x240 cm FIBRA DE VIDRIO,1150.00
+395,Tablón rectangular,de 75x240 cm FIBRACEL,865.00
+396,Tablón cuadrado,de 75x75 cm FIBRA DE VIDRIO,670.00
+397,Tablón cuadrado,de 75x75 cm FIBRACEL,580.00
+398,Tablón cuadrado,de 150x150 cm FIBRA DE VIDRIO,1360.00
+399,Tablón cuadrado,de 150x150 cm FIBRACEL,1185.00
+400,Tablón cuadrado,de 90x90 cm FIBRA DE VIDRIO,915.00
+401,Tablón redondo,de 120 cm de diámetro FIBRA DE VIDRIO,1290.00
+402,Tablón redondo,de 120 cm de diámetro FIBRACEL,930.00
+403,Tablón redondo,de 150 cm de diámetro FIBRA DE VIDRIO,1340.00
+404,Tablón redondo,de 150 cm de diámetro FIBRACEL,1055.00
+405,Silla plegable tapizada,acojinada cromada INFANTIL,200.00
+406,Silla plegable tapizada,acojinada cromada ADULTO,220.00
+407,Silla plegable tapizada,acojinada pintada INFANTIL,200.00
+408,Silla plegable tapizada,acojinada pintada ADULTO,219.00
+409,Silla plegable de polipropileno,INFANTIL,195.00
+410,Silla plegable de polipropileno,ADULTO,215.00
+411,Silla ECO,tapizada en pliana pintada,462.00
+412,Silla ECO,tapizada en pliana cromada,641.00
+413,Silla ECO,tapizada en vinil pintada,457.00
+414,Silla ECO,tapizada en vinil cromada,641.00 

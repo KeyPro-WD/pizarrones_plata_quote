@@ -55,6 +55,10 @@ main aside nav ul {
     text-align: center;
 }
 
+main aside nav ul li {
+    margin: 20px 0;
+}
+
 main aside nav ul li a {
     text-decoration: none;
     color: #fff;
@@ -315,4 +319,188 @@ main article section div.container_final img {
 
 #logo, #firma {
     display: none;
+}
+
+#result {
+    height: 0px;
+    max-height: 250px;
+    text-align: left;
+    overflow-y: auto;
+    border-bottom: 1px solid #e48511;
+}
+
+#result ul {
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    font-size: 14px;
+    color: #2b2b2b;
+    list-style: none;
+}
+
+#result ul li {
+    transition: ease all 0.25s;
+    cursor: pointer;
+}
+
+#result ul li:hover {
+    background: rgba(255, 120, 0, 0.1)
+}
+
+/* Estilos de la página files */
+.archivosContent {
+	width: 100%;
+    padding: 20px 40px;
+}
+
+.archivosContent table {
+	width: 100%;
+	margin-top: 20px
+}
+
+.archivosContent table tr:not(:first-of-type) {
+	transition: ease all 0.25s;
+}
+
+.archivosContent table tr td:focus {
+	background: #2b2b2b;
+	color: #fff;
+	transform: translateX(10%);
+}
+
+.archivosContent table tr:hover {
+	background: #E7E7E7;
+}
+
+.archivosContent table th {
+	background: #e48511;
+	padding: 5px 90px;
+	font-family: 'Open sans', sans-serif;
+	font-weight: 300;
+	font-style: bold;
+	color: #fff;
+	font-size: 18px;
+}
+
+.archivosContent table td {
+	padding: 5px 10px;
+	transition: ease all 0.3s;
+}
+
+.tdCenter {
+	text-align: center;
+}
+
+.archivosContent .lblFile {
+	font-size: 14px;
+	font-family: 'Open sans', sans-serif;
+}
+
+.archivosContent .btnToolsFile img {
+    width: 25px;
+    margin: 0 5px;
+	vertical-align: middle;
+	background: transparent;
+}
+
+.archivosContent a {
+    text-decoration: none;
+}
+
+.archivosContent .btnToolsFile {
+    background: none;
+ 	border: none;
+	cursor: pointer;
+}
+
+.archivosContent .file_imagen {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.archivosContent .lblFile {
+	font-size: 15px;
+	font-family: 'Open sans', sans-serif;
+	font-weight: bold;
+	color: #2b2b2b;
+	display: inline-block;
+	transition: ease all 0.25s;
+	cursor: pointer;
+	width: fit-content;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.archivosContent .lblFile img {
+	width: 20px;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+.archivosContent .elegir {
+	width: 20px;
+	margin-right: 10px;
+}
+
+.archivosContent form {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.archivosContent form #inputFile {
+	cursor: pointer;
+	font-family: 'Open sans';
+	font-weight: 300;
+    color: #2b2b2b;
+	padding: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.archivosContent form #btnSubir {
+	cursor: pointer;
+	font-family: 'Open sans';
+	font-weight: 300;
+	color: #2b2b2b;
+	padding: 5px 20px;
+	font-size: 16px;
+	background: #fff;
+	border: 1px solid #e48511;
+	transition: ease all 0.25s;
+	border-radius: 7px 0px 7px 0px;
+}
+
+.archivosContent form #btnSubir:hover {
+	color: #fff;
+	background: #e48511;
+	border-radius: 0px 7px 0px 7px;
+}
+
+/* Estilos de las Alertas */
+.alert {
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 18px;
+    background-color: gray;
+    border-radius: 7px 0 0 7px;
+    position: fixed;
+    z-index: 50;
+    right: -150%;
+    bottom: 40px;
+    color: #fff;
+    transition: ease all 0.5s;
+}
+
+.alert-true {
+    background: green;
+}
+
+.alert-false {
+    background: red;
 }

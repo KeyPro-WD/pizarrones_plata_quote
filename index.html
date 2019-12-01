@@ -19,7 +19,11 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#"><i class="fas fa-home"></i></a>
+                        <a href="index.html" id="btnHome"><i class="fas fa-home"></i></a>
+                    </li>
+
+                    <li>
+                        <a href="files.html" id="btnFiles"><i class="fas fa-folder-open"></i></a>
                     </li>
                 </ul>
             </nav>
@@ -76,6 +80,10 @@
                             </tr>
 
                             <tr>
+                                <td colspan="5" id="result"></td>
+                            </tr>
+
+                            <tr>
                                 <th colspan="2"></th>
                                 <th>Subtotal</th>
                                 <td id="subtotal" class="finales">$0.00</td>
@@ -121,5 +129,53 @@
     <script src="js/jspdf.min.js"></script>
     <script src="js/jspdf.plugin.autotable.min.js"></script>
     <script src="js/tableLogic.js"></script>
+
+    <script>
+        var catalogo = [];
+
+        $.ajax({
+            url: 'database/catalogo.csv',
+            dataType: 'text',
+        }).done(successFunction);
+        
+        function successFunction(data) {
+            let allRows = data.split(/\r?\n|\r/);
+            
+            for (let singleRow = 1; singleRow < allRows.length; singleRow++) {
+                let rowCells = allRows[singleRow].split(',');
+                let producto = [];
+
+                for (var rowCell = 0; rowCell < rowCells.length; rowCell++) {
+                    producto.push(rowCells[rowCell]);
+                }
+
+                catalogo.push(producto);
+            }
+        }
+
+        $("#producto").keyup(function () {
+            let search = $("#producto").text();
+
+            if (search != "" && search != null) {
+                $("#result").html("");
+                let salida = "<ul>";
+
+                for (let i = 0; i < catalogo.length; i++){
+                    if (catalogo[i][1].includes(search)) {
+                        salida += "<li class='productoOP' data-precio='" + catalogo[i][3] + "' id='" + catalogo[i][0] + "'>" + catalogo[i][1] + " " + catalogo[i][2] + "</li>";
+                    }
+                }
+                
+                $("#result").html(salida + "</ul>");
+            } else {
+                $("#result").html("");
+            }
+        });
+
+        $(document).on("click", ".productoOP", function() {
+            $("#producto").text($(this).text());
+            $("#precio").text($(this).attr('data-precio'));
+        });
+    </script>
 </body>
 </html>
