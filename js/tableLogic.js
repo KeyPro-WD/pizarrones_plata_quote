@@ -327,11 +327,12 @@ $("#btnGenerarPDF").click(function() {
 	let img = get64(document.getElementById("logo"));
 	pdf.addImage(img, 'PNG', 1.27, 1.27, 2.7, 2.6);
 
-	//Añadiendo fecha
+	// Añadiendo fecha
 	pdf.setFont('helvetica', 'normal');
 	pdf.setFontSize(10);
 	pdf.setTextColor('#404040');
-	pdf.text(alignRight(pdf, "Ecatepec de Morelos, México a " + date)-1.27, 2.62, 'Ecatepec de Morelos, México a ' + date);
+	// pdf.text(alignRight(pdf, "Ecatepec de Morelos, México a " + date)-1.27, 2.62, 'Ecatepec de Morelos, México a ' + date);
+	pdf.text(alignRight(pdf, "México, " + date)-1.27, 2.62, 'México, ' + date);
 
 	//Añadiendo título
 	pdf.setFont('helvetica', 'normal');
@@ -436,7 +437,7 @@ $("#btnGenerarPDF").click(function() {
 	pdf.text("Agradeciendo de antemano su atención, quedo a sus órdenes para cualquier duda o comentario.", 1.27, pdf.autoTable.previous.finalY + 3);
 	pdf.text("Atentamente", alignCenter(pdf, "Atentamente"), pdf.autoTable.previous.finalY + 4.5);
 	pdf.text("Alejandra Lascari Mora", alignCenter(pdf, "Alejandra Lascari Mora"), pdf.autoTable.previous.finalY + 5.1);
-	pdf.text("Calle: Gustavo Baz Mz. 54 Lt.25 Col. Villas de Guadalupe Xalostoc Ecatepec de Morelos, Cp. 55339", alignCenter(pdf, "Calle: Gustavo Baz Mz. 54 Lt.25 Col. Villas de Guadalupe Xalostoc Ecatepec de Morelos, Cp. 55339"), pdf.autoTable.previous.finalY + 6.5);
+	// pdf.text("Calle: Gustavo Baz Mz. 54 Lt.25 Col. Villas de Guadalupe Xalostoc Ecatepec de Morelos, Cp. 55339", alignCenter(pdf, "Calle: Gustavo Baz Mz. 54 Lt.25 Col. Villas de Guadalupe Xalostoc Ecatepec de Morelos, Cp. 55339"), pdf.autoTable.previous.finalY + 6.5);
 
 	//Añadiendo firma electrónica
 	let img1 = get64(document.getElementById("firma"));
