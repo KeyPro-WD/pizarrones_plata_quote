@@ -1,3 +1,6 @@
+<?php
+    require_once "php/session.php";
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -19,7 +22,7 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="index.html" id="btnHome"><i class="fas fa-home"></i></a>
+                        <a href="index.php" id="btnHome"><i class="fas fa-home"></i></a>
                     </li>
                 </ul>
             </nav>
