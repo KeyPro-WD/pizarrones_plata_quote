@@ -82,9 +82,9 @@ $(document).on("blur", "#fecha", function () {
 
 /* ----- Funciones del sistema ----- */
 function addProduct() {
-	cantidad = parseInt($("#cantidad").text());
-	producto = $("#producto").text();
-	precio = parseInt($("#precio").text());
+	cantidad = parseInt($("#cantidad").text()); // Las cantidades siempre son exactas -> INT
+	producto = $("#producto").text(); // Las descripciones de productos son siempre textos -> STRING
+	precio = parseFloat($("#precio").text()); // Los precios pueden ser decimales -> FLOAT
 
 	if (cantidad != null && cantidad != "" && producto != null && producto != "" && precio != null && precio != "") {
 		//Si la tabla no tiene productos.
@@ -132,15 +132,16 @@ function removeProduct(object) {
 
 function updateCantidad(object) {	
 	if (confirm("¿Está seguro de actualizar la cantidad?")) {
-		let producto_cantidad = $(object).text();
+		let producto_cantidad = parseInt($(object).text()); // La cantidad siempre es entera -> INT
 		let idProductos = $(object).parent().index();
 		let producto_precio = $('#tableList tbody tr:eq(' + idProductos + ') td:eq(2)').text();
-		producto_precio = parseInt(producto_precio.substring(1));
+		producto_precio = parseFloat(producto_precio.substring(1));
 
 		if (producto_cantidad != "" && producto_cantidad != null) {
-			cantidad = parseInt(producto_cantidad);
+			cantidad = producto_cantidad;
 			precio = producto_precio;
-			importe = cantidad * precio;
+			importe = (cantidad * precio).toFixed(2);
+			importe = parseFloat(importe);
 
 			productos[idProductos][0] = cantidad;
 			productos[idProductos][3] = importe;
@@ -183,12 +184,13 @@ function updatePrecio(object) {
 			cantidad = parseInt(producto_cantidad);
 
 			if (producto_precio.substring(0,1) == '$') {
-				precio = parseInt(producto_precio.substring(1));
+				precio = parseFloat(producto_precio.substring(1));
 			} else {
-				precio = parseInt(producto_precio);
+				precio = parseFloat(producto_precio);
 			}
 			
-			importe = cantidad * precio;
+			importe = (cantidad * precio).toFixed(2);
+			importe = parseFloat(importe);
 
 			productos[idProductos][0] = cantidad;
 			productos[idProductos][3] = importe;
@@ -277,15 +279,19 @@ function subtotal() {
 		suma += productos[i][3];
 	}
 
-	return suma;
+	let sumaDecimal = suma.toFixed(2);
+
+	return parseFloat(sumaDecimal);
 }
 
 function iva() {
-	return (subtotal() * 16) / 100;
+	let iva = ((subtotal() * 16) / 100).toFixed(2);
+
+	return parseFloat(iva);
 }
 
 function totalAPagar() {
-	return subtotal() + iva();
+	return parseFloat((subtotal() + iva()).toFixed(2));
 }
 
 function fillTotalValues() {
