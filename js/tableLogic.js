@@ -12,12 +12,14 @@ var date = getDate(),
 	focus_precio = "",
 	focus_cliente = "",
 	focus_empresa = "",
-	plantilla = "<tr><td>-</td><td></td><td></td><td></td><td></td></tr>";
+	plantilla = "<tr><td>-</td><td></td><td></td><td></td><td></td></tr>",
+	direccion = "";
 
 /* ----- Ejecución al momento de cargar la página ----- */
 $(document).ready(function() {
 	$("#tableList tbody").append(plantilla);
 	$("#fecha").text(getDate());
+	$("#direccion-campo").val("");
 });
 
 /* ----- Control de eventos en los botones ----- */
@@ -323,6 +325,34 @@ $("body").keydown(function() {
 	}
 });
 
+/* ----- Añadir una dirección a la cotización ----- */
+$("#btnAddDireccion").click(function() {
+	$("#modal-direccion").slideDown(300);
+	$("#modal-direccion").css({'display':'flex'});
+});
+
+$("#btnCancelDireccion").click(function() {
+	$("#direccion-campo").val("");
+	$("#modal-direccion").slideUp(300);
+	$("#btnAddDireccion").text("Agregar dirección");
+	$("#btnSaveDirection").text("Añadir");
+	$("#btnCancelDireccion").text("Cancelar");
+});
+
+$("#btnSaveDirection").click(function() {
+	let direccion_ingresada = $("#direccion-campo").val();
+
+	if (direccion_ingresada != "") {
+		direccion = direccion_ingresada;
+		$("#modal-direccion").slideUp(300);
+		$("#btnAddDireccion").text("Ver dirección");
+		$("#btnSaveDirection").text("Aceptar");
+		$("#btnCancelDireccion").text("Eliminar");
+	} else {
+		alert("Por favor ingresa una dirección válida.");
+	}
+});
+
 /* ----- Generar archivo PDF ----- */
 $("#btnGenerarPDF").click(function() {
 	const pdf = new jsPDF({
@@ -337,8 +367,15 @@ $("#btnGenerarPDF").click(function() {
 	pdf.setFont('helvetica', 'normal');
 	pdf.setFontSize(10);
 	pdf.setTextColor('#404040');
-	// pdf.text(alignRight(pdf, "Ecatepec de Morelos, México a " + date)-1.27, 2.62, 'Ecatepec de Morelos, México a ' + date);
 	pdf.text(alignRight(pdf, "México, " + date)-1.27, 2.62, 'México, ' + date);
+
+	if (direccion != null && direccion != "") {
+		// Añadiendo dirección
+		pdf.setFont('helvetica', 'normal');
+		pdf.setFontSize(10);
+		pdf.setTextColor('#404040');
+		pdf.text(alignRight(pdf, direccion)-1.27, 3, direccion);
+	}
 
 	//Añadiendo título
 	pdf.setFont('helvetica', 'normal');

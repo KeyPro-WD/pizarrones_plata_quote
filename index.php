@@ -13,6 +13,23 @@
     <link rel="stylesheet" href="css/FontAwesome 5.8/css/all.min.css">
 </head>
 <body>
+    <div class="modal-direccion" id="modal-direccion">
+        <div class="modal-backdrop">
+            <div class="modal-head">
+                <h2 class="modal-title">Añadiendo una dirección</h2>
+            </div>
+
+            <div class="modal-body">
+                <textarea id="direccion-campo" placeholder="Escribe la dirección aquí..."></textarea>
+            </div>
+
+            <div class="modal-footer">
+                <button class="button-cancelar" id="btnCancelDireccion">Cancelar</button>
+                <button class="button-save" id="btnSaveDirection">Añadir</button>
+            </div>
+        </div>
+    </div>
+
     <header>
         <img src="img/Logo.png" alt="Logo Pizarrones Plata">
     </header>
@@ -33,6 +50,7 @@
                 <h1 id="titulo">Cotización</h1>
 
                 <button id="btnGenerarPDF">GenerarPDF</button>
+                <button id="btnAddDireccion">Agregar dirección</button>
 
                 <div class="container_fecha">
                     <!-- <p>Ecatepec de Morelos, México a <strong id="fecha" contenteditable></strong></p> -->
@@ -129,7 +147,6 @@
     <script src="js/jspdf.min.js"></script>
     <script src="js/jspdf.plugin.autotable.min.js"></script>
     <script src="js/tableLogic.js"></script>
-
     <script>
         var catalogo = [];
 
