@@ -374,7 +374,10 @@ $("#btnGenerarPDF").click(function() {
 		pdf.setFont('helvetica', 'normal');
 		pdf.setFontSize(10);
 		pdf.setTextColor('#404040');
-		pdf.text(alignRight(pdf, direccion)-1.27, 3, direccion);
+		let textWidth = 7.5 * pdf.internal.getFontSize() / pdf.internal.scaleFactor;
+		let positionX = (pdf.internal.pageSize.width - textWidth);
+		let splitTitle = pdf.splitTextToSize(direccion, 7.5);
+		pdf.text(positionX-5.3, 3, splitTitle);
 	}
 
 	//Añadiendo título
