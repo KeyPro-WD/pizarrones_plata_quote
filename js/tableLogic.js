@@ -377,7 +377,7 @@ $("#btnGenerarPDF").click(function() {
 		let textWidth = 7.5 * pdf.internal.getFontSize() / pdf.internal.scaleFactor;
 		let positionX = (pdf.internal.pageSize.width - textWidth);
 		let splitTitle = pdf.splitTextToSize(direccion, 7.5);
-		pdf.text(positionX-5.3, 3, splitTitle);
+		pdf.text(positionX-5.8, 3, splitTitle);
 	}
 
 	//Añadiendo título
