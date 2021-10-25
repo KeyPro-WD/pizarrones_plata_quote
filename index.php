@@ -27,6 +27,42 @@
         </div>
     </div>
 
+    <div class="modal-acotaciones" id="modal-acotaciones">
+        <div class="modal-backdrop">
+            <div class="modal-head">
+                <h2 class="modal-title">Editando sección de acotaciones</h2>
+            </div>
+
+            <div class="modal-body">
+                <label for="vigencia">Vigencia de la cotización:</label>
+                <input
+                    type="text"
+                    name="vigencia"
+                    placeholder="Vigencia de la cotización..."
+                    value="Siete (7) días habiles."
+                    id="vigencia-campo"
+                >
+
+                <label for="anticipo">Anticipo:</label>
+                <input
+                    type="text"
+                    name="anticipo"
+                    placeholder="Anticipo de la cotización..."
+                    value="-- Para todo tipo de trabajo solicitamos el 60% de anticipo. --"
+                    id="anticipo-campo"
+                >
+
+                <label for="comentario-extra">Comentario:</label>
+                <textarea name="comentario-extra" id="comentario-extra-campo">Agradeciendo de antemano su atención, quedo a sus órdenes para cualquier duda o comentario.</textarea>
+            </div>
+
+            <div class="modal-footer">
+                <button class="button-cancelar" id="btnCancelarAcotaciones">Cancelar</button>
+                <button class="button-save" id="btnSaveAcotaciones">Añadir</button>
+            </div>
+        </div>
+    </div>
+
     <header>
         <img src="img/Logo.png" alt="Logo Pizarrones Plata">
     </header>
@@ -119,19 +155,17 @@
                     </table>
                 </div>
 
+                <div class="buttons-container-final">
+                    <button id="btnEditAcotaciones">Editar acotaciones</button>
+                </div>
+
                 <div class="container_final">
-                    <p><strong>VIGENCIA DE LA COTIZACION</strong>: Treinta (30) días habiles.</p>
-
-                    <p><strong>-- Para todo tipo de trabajo solicitamos el 50% de anticipo. --</strong></p>
-
-                    <p>Agradeciendo de antemano su atención, quedo a sus órdenes para cualquier duda o comentario.</p>
-
+                    <p id="vigencia-texto"></p>
+                    <p id="anticipo-texto"></p>
+                    <p id="comentario-extra-texto"></p>
                     <p class="firma">Atentamente</p>
-
                     <p class="firma" id="usuario_Nombre">Alejandra Lascari Mora</p>
-
                     <!-- <p class="direccion">Calle: Gustavo Baz Mz. 54 Lt.25 Col. Villas de Guadalupe Xalostoc Ecatepec de Morelos, Cp. 55339</p> -->
-
                     <img src="img/Firma.png" alt="Firma electrónica">
                 </div>
             </section>

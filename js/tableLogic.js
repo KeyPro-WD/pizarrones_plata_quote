@@ -13,13 +13,17 @@ var date = getDate(),
 	focus_cliente = "",
 	focus_empresa = "",
 	plantilla = "<tr><td>-</td><td></td><td></td><td></td><td></td></tr>",
-	direccion = "";
+	direccion = "",
+	vigencia = "Siete (7) días habiles.",
+	anticipo = "-- Para todo tipo de trabajo solicitamos el 60% de anticipo. --"
+	comentario_extra = "Agradeciendo de antemano su atención, quedo a sus órdenes para cualquier duda o comentario.";
 
 /* ----- Ejecución al momento de cargar la página ----- */
 $(document).ready(function() {
 	$("#tableList tbody").append(plantilla);
 	$("#fecha").text(getDate());
 	$("#direccion-campo").val("");
+	llenarTextosAcotaciones(vigencia, anticipo, comentario_extra);
 });
 
 /* ----- Control de eventos en los botones ----- */
@@ -353,6 +357,30 @@ $("#btnSaveDirection").click(function() {
 	}
 });
 
+/* ----- Editar sección de acotaciones en la cotización ----- */
+$("#btnEditAcotaciones").click(function() {
+	$("#modal-acotaciones").slideDown(300);
+	$("#modal-acotaciones").css({'display':'flex'});
+});
+
+$("#btnCancelarAcotaciones").click(function() {
+	$("#modal-acotaciones").slideUp(300);
+});
+
+$("#btnSaveAcotaciones").click(function() {
+	vigencia = $("#vigencia-campo").val();
+	anticipo = $("#anticipo-campo").val();
+	comentario_extra = $("#comentario-extra-campo").val();
+	llenarTextosAcotaciones(vigencia, anticipo, comentario_extra);
+	$("#modal-acotaciones").slideUp(300);
+});
+
+function llenarTextosAcotaciones(vigencia, anticipo, comentario_extra) {
+	$("#vigencia-texto").html(`<strong>VIGENCIA DE LA COTIZACION</strong>: ${vigencia}`);
+	$("#anticipo-texto").html(`<strong>${anticipo}</strong>`);
+	$("#comentario-extra-texto").html(comentario_extra);
+}
+
 /* ----- Generar archivo PDF ----- */
 $("#btnGenerarPDF").click(function() {
 	const pdf = new jsPDF({
@@ -469,18 +497,18 @@ $("#btnGenerarPDF").click(function() {
 	pdf.setFont('helvetica', 'normal');
 	pdf.setFontSize(12);
 	pdf.setTextColor('#2b2b2b');
-	pdf.text("VIGENCIA DE LA COTIZACION: Treinta (30) días habiles.", 1.7, pdf.autoTable.previous.finalY + 1.7);
+	pdf.text(`VIGENCIA DE LA COTIZACION: ${vigencia}`, 1.7, pdf.autoTable.previous.finalY + 1.7);
 
 	pdf.setFont('helvetica', 'bold');
 	pdf.setFontSize(12);
 	pdf.setTextColor('#2b2b2b');
-	pdf.text("-- Para todo tipo de trabajo solicitamos el 50% de anticipo. --", 1.7, pdf.autoTable.previous.finalY + 2.3);
+	pdf.text(`${anticipo}`, 1.7, pdf.autoTable.previous.finalY + 2.3);
 
 	//Añadiendo despedida
 	pdf.setFont('helvetica', 'normal');
 	pdf.setFontSize(12);
 	pdf.setTextColor('#2b2b2b');
-	pdf.text("Agradeciendo de antemano su atención, quedo a sus órdenes para cualquier duda o comentario.", 1.27, pdf.autoTable.previous.finalY + 3);
+	pdf.text(`${comentario_extra}`, 1.27, pdf.autoTable.previous.finalY + 3);
 	pdf.text("Atentamente", alignCenter(pdf, "Atentamente"), pdf.autoTable.previous.finalY + 4.5);
 	pdf.text("Alejandra Lascari Mora", alignCenter(pdf, "Alejandra Lascari Mora"), pdf.autoTable.previous.finalY + 5.1);
 	// pdf.text("Calle: Gustavo Baz Mz. 54 Lt.25 Col. Villas de Guadalupe Xalostoc Ecatepec de Morelos, Cp. 55339", alignCenter(pdf, "Calle: Gustavo Baz Mz. 54 Lt.25 Col. Villas de Guadalupe Xalostoc Ecatepec de Morelos, Cp. 55339"), pdf.autoTable.previous.finalY + 6.5);

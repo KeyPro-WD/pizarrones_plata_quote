@@ -90,7 +90,8 @@ main article section #titulo {
 }
 
 main article section #btnGenerarPDF,
-main article section #btnAddDireccion {
+main article section #btnAddDireccion,
+#btnEditAcotaciones {
     font-size: 0.8em;
     padding: 5px 10px;
     border: none;
@@ -107,7 +108,8 @@ main article section #btnAddDireccion {
 }
 
 main article section #btnGenerarPDF:hover,
-main article section #btnAddDireccion:hover {
+main article section #btnAddDireccion:hover,
+#btnEditAcotaciones:hover {
     background: #fff;
     color: #e48511;
     border: 1px solid #e48511;
@@ -596,4 +598,116 @@ main article section div.container_final img {
     font-size: 20px;
     cursor: pointer;
     color: #e48511;
+}
+
+.modal-acotaciones {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.7);
+    display: none;
+}
+
+.modal-acotaciones .modal-backdrop {
+    width: 90%;
+    max-width: 400px;
+    padding: 0 20px;
+    background: #ffffff;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+
+.modal-acotaciones .modal-backdrop .modal-head {
+    padding: 20px 0;
+    position: relative;
+}
+
+.modal-acotaciones .modal-backdrop .modal-head .modal-title {
+    color: #e48511;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.modal-acotaciones .modal-backdrop .modal-body {
+    padding: 20px 0;
+}
+
+.modal-acotaciones .modal-backdrop .modal-body textarea {
+    width: 100%;
+    border: none;
+    height: 100px;
+    max-width: 100%;
+    min-width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    max-height: 150px;
+    min-height: 100px;
+    color: rgba(0,0,0,0.8);
+    border-bottom: 1px solid rgba(255, 120, 0, 0.5);
+}
+
+.modal-acotaciones .modal-backdrop .modal-body label {
+    width: 100%;
+    font-size: 16px;
+}
+
+.modal-acotaciones .modal-backdrop .modal-body input {
+    width: 95%;
+    border: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin: 10px auto 20px auto;
+    color: rgba(0,0,0,0.8);
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.modal-acotaciones .modal-backdrop .modal-footer {
+    text-align: right;
+    padding-bottom: 20px;
+}
+
+.modal-acotaciones .modal-backdrop .modal-footer .button-save,
+.modal-acotaciones .modal-backdrop .modal-footer .button-cancelar {
+    font-size: 0.8em;
+    padding: 5px 10px;
+    border: none;
+    background: #e48511;
+    border: 1px solid transparent;
+    color: #fff;
+    border-radius: 7px 0 7px 0;
+    transition: ease all 0.25s;
+    cursor: pointer;
+}
+
+.modal-acotaciones .modal-backdrop .modal-footer .button-save:hover,
+.modal-acotaciones .modal-backdrop .modal-footer .button-cancelar:hover {
+    background: #fff;
+    color: #e48511;
+    border: 1px solid #e48511;
+}
+
+#btnCloseModalAcotaciones {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #e48511;
+}
+
+.buttons-container-final {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
 }
