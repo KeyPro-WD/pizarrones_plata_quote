@@ -11,12 +11,12 @@ jobs:
     steps:
     - name: Get latest code
       uses: actions/checkout@v2.3.2
-    
+
     - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        server: ftp.pizarronesypupitresmx.com
+        server: ftp.fabricantedepizarrones.com.mx
         username: ${{ secrets.PIZARRONES_USER }}
         password: ${{ secrets.PIZARRONES_PASSWORD }}
-        server-dir: cotizador.pizarronesypupitresmx.com/
+        server-dir: ${{ secrets.PIZARRONES_DIR }}
         port: 21
