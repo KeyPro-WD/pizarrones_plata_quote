@@ -250,8 +250,8 @@ function fillTemplate() {
 		`<tr id="__` + id + `" data-producto_id="__` + id + `">
             <td id="producto_cantidad" contenteditable>` + cantidad + `</td>
             <td id="producto_descripcion" contenteditable>` + producto + `</td>
-            <td id="producto_precio" contenteditable>$` + precio + `</td>
-            <td id="producto_importe">$` + importe + `</td>
+            <td id="producto_precio" contenteditable>` + numeral(precio).format('$0,0.00') + `</td>
+            <td id="producto_importe">` + numeral(importe).format('$0,0.00') + `</td>
             <td id="producto_tools">
                 <button id='btnEliminar' data-id_eliminar="` + id + `" title='Eliminar' class="btnTools">
                     <img src='img/Eliminar.png'>
@@ -301,9 +301,9 @@ function totalAPagar() {
 }
 
 function fillTotalValues() {
-	$("#subtotal").text("$" + subtotal());
-	$("#iva").text("$" + iva());
-	$("#total").text("$" + totalAPagar());
+	$("#subtotal").text((numeral(subtotal()).format('$0,0.00')));
+	$("#iva").text((numeral(iva()).format('$0,0.00')));
+	$("#total").text((numeral(totalAPagar()).format('$0,0.00')));
 }
 
 function getDate() {
@@ -437,7 +437,14 @@ $("#btnGenerarPDF").click(function() {
 	let data = [];
 
 	for (let i = 0; i < productos.length; i++) {
-		data.push(productos[i]);
+		let product = [
+			productos[i][0],
+			productos[i][1],
+			numeral(productos[i][2]).format('$0,0.00'),
+			numeral(productos[i][3]).format('$0,0.00'),
+		];
+
+		data.push(product);
 	}
 
 	pdf.autoTable(columns, data, {
@@ -475,15 +482,15 @@ $("#btnGenerarPDF").click(function() {
 			[
 				{ content: "", colSpan: 2, rowSpan: 3 },
 				{ content: "Subtotal", styles: { halign: "right" } },
-				{ content: "$" + subtotal(), styles: { halign: "left" } }
+				{ content: (numeral(subtotal()).format('$0,0.00')), styles: { halign: "right" } }
 			],
 			[
 				{ content: "I.V.A 16%", styles: { halign: "right" } },
-				{ content: "$" + iva(), styles: { halign: "left" } }
+				{ content: (numeral(iva()).format('$0,0.00')), styles: { halign: "right" } }
 			],
 			[
 				{ content: "TOTAL", styles: { halign: "right" } },
-				{ content: "$" + totalAPagar(), styles: { halign: "left" } }
+				{ content: (numeral(totalAPagar()).format('$0,0.00')), styles: { halign: "right" } }
 			]
 		]
 	});

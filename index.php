@@ -177,6 +177,7 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/jspdf.min.js"></script>
     <script src="js/jspdf.plugin.autotable.min.js"></script>
+    <script src="js/numeral.min.js"></script>
     <script src="js/tableLogic.js"></script>
     <script>
         var catalogo = [];
